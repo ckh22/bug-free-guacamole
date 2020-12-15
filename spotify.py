@@ -3,10 +3,42 @@ from datetime import date
 import requests
 from requests.api import head
 import datetime
-from urllib.parse import urlencode
+from urllib.parse import quote, urlencode
+import urllib.parse, urllib.request, urllib.error, json, webbrowser
+from flask import Flask, request, redirect, g, render_template
 
+app = Flask(__name__)
+def pretty(obj):
+    return json.dumps(obj, sort_keys=True, indent=2)
+
+# client credentials
 client_id = 'c3489fd7fba04530a443381d740d1dc2'
 client_secret = '2a8ad0b1aa4c4a9ba40c673397e9b7d5'
+auth_URL = 'https://accounts.spotify.com/authorize'
+token_URL = 'https://accounts.spotify.com/api/token'
+client_URL = 'http://localhost:8080/callback/'
+scope = 'playlist-read-private'
+
+parameters = {
+    "response_type": "code",
+    "redirect_uri": client_URL,
+    "scope": scope,
+    "client_id": client_id
+}
+
+@app.route('/')
+def index():
+    auth = auth_URL + "?" + urlencode(parameters)
+    print(auth)
+    return redirect(auth)
+
+@app.route("/callback/")
+def callback():
+    return render_template("landing.html")
+
+
+if __name__ == "__main__":
+    app.run(host="localhost", port=8080, debug=True)
 
 class SpotifyAPI(object):
     access_token = None
@@ -99,3 +131,4 @@ class SpotifyAPI(object):
         return r.json()
 
 spotify = SpotifyAPI(client_id, client_secret)
+print(pretty(spotify.search(query='the weeknd')))
