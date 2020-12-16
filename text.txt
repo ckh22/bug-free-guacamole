@@ -1,0 +1,844 @@
+{
+  "href": "https://api.spotify.com/v1/users/cliffordhart/playlists?offset=0&limit=20",
+  "items": [
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/24IeYGw2T6aJIMGdPogOUg"
+      },
+      "href": "https://api.spotify.com/v1/playlists/24IeYGw2T6aJIMGdPogOUg",
+      "id": "24IeYGw2T6aJIMGdPogOUg",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb57b219fe92b056f5fed6ca66",
+          "width": null
+        }
+      ],
+      "name": "u",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDcsMzliOGMzNGNhN2ViZjZmN2RlY2U3OTUzMGMzMDU4NmQ5OGEyYjkwMQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/24IeYGw2T6aJIMGdPogOUg/tracks",
+        "total": 36
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:24IeYGw2T6aJIMGdPogOUg"
+    },
+    {
+      "collaborative": false,
+      "description": "fml",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4v2t6JeWIij2MwHN5WqSGN"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4v2t6JeWIij2MwHN5WqSGN",
+      "id": "4v2t6JeWIij2MwHN5WqSGN",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273116ea45a2037cd44e431a732ab67616d0000b273339f780dfdbc38558ea0761dab67616d0000b273c31dd33cc55bf7c1246b4b6eab67616d0000b273f42892147499d644ac670c9f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273116ea45a2037cd44e431a732ab67616d0000b273339f780dfdbc38558ea0761dab67616d0000b273c31dd33cc55bf7c1246b4b6eab67616d0000b273f42892147499d644ac670c9f",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273116ea45a2037cd44e431a732ab67616d0000b273339f780dfdbc38558ea0761dab67616d0000b273c31dd33cc55bf7c1246b4b6eab67616d0000b273f42892147499d644ac670c9f",
+          "width": 60
+        }
+      ],
+      "name": "work",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NzYsYjQyNzE4ZGVmYWU1MTNhOWQ0YzgzNmZiOGFlZGM1MzdmZDVkNzhmZQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4v2t6JeWIij2MwHN5WqSGN/tracks",
+        "total": 72
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4v2t6JeWIij2MwHN5WqSGN"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2NbJwO07BVrsPvBIgW3qHM"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2NbJwO07BVrsPvBIgW3qHM",
+      "id": "2NbJwO07BVrsPvBIgW3qHM",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2736cd9fa0c7df45ff45364bbe1ab67616d0000b2738fa5993f1af85d9fe10a2be1ab67616d0000b2739536e13edd9e2e08d2dae94bab67616d0000b273a02e21b824287cf8fcb482fb",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2736cd9fa0c7df45ff45364bbe1ab67616d0000b2738fa5993f1af85d9fe10a2be1ab67616d0000b2739536e13edd9e2e08d2dae94bab67616d0000b273a02e21b824287cf8fcb482fb",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2736cd9fa0c7df45ff45364bbe1ab67616d0000b2738fa5993f1af85d9fe10a2be1ab67616d0000b2739536e13edd9e2e08d2dae94bab67616d0000b273a02e21b824287cf8fcb482fb",
+          "width": 60
+        }
+      ],
+      "name": "brit WAVE",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTMsNjQxMDMzM2RjNGQwZTJjYTg3OGU3MDYxM2Y3NWFlMDk1YWY1YWNmYQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2NbJwO07BVrsPvBIgW3qHM/tracks",
+        "total": 8
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2NbJwO07BVrsPvBIgW3qHM"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1vfjARWf1Tnmpj1N5UDcdq"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1vfjARWf1Tnmpj1N5UDcdq",
+      "id": "1vfjARWf1Tnmpj1N5UDcdq",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273088c2f4d6f6f30f46d02063dab67616d0000b2734c8974d1d37295694d7d4e8fab67616d0000b27354a5233b986fbd4310e21ecdab67616d0000b2739b62383f60112414ab169e6c",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273088c2f4d6f6f30f46d02063dab67616d0000b2734c8974d1d37295694d7d4e8fab67616d0000b27354a5233b986fbd4310e21ecdab67616d0000b2739b62383f60112414ab169e6c",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273088c2f4d6f6f30f46d02063dab67616d0000b2734c8974d1d37295694d7d4e8fab67616d0000b27354a5233b986fbd4310e21ecdab67616d0000b2739b62383f60112414ab169e6c",
+          "width": 60
+        }
+      ],
+      "name": "19.10",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjksMjNiMjBhNzNlY2U3MDdlMmQ0Y2JlY2ExZTQ4NzE4ODMzZjUwYjQ3Ng==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1vfjARWf1Tnmpj1N5UDcdq/tracks",
+        "total": 26
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1vfjARWf1Tnmpj1N5UDcdq"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2afVznSlh8JnPbR0CejllH"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2afVznSlh8JnPbR0CejllH",
+      "id": "2afVznSlh8JnPbR0CejllH",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2731829a61de501cdd8c9743edaab67616d0000b27358742932108a66bf62da9daaab67616d0000b273a28f8d20c630333ca1f461a1ab67616d0000b273a495ac29e18f3b4073db271f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2731829a61de501cdd8c9743edaab67616d0000b27358742932108a66bf62da9daaab67616d0000b273a28f8d20c630333ca1f461a1ab67616d0000b273a495ac29e18f3b4073db271f",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2731829a61de501cdd8c9743edaab67616d0000b27358742932108a66bf62da9daaab67616d0000b273a28f8d20c630333ca1f461a1ab67616d0000b273a495ac29e18f3b4073db271f",
+          "width": 60
+        }
+      ],
+      "name": "edm",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjEsYWRiZmVjMzFhNWE4NmY0OWMzNjFkN2RkOGFlYTdlOGU5OGNmMGEzMw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2afVznSlh8JnPbR0CejllH/tracks",
+        "total": 19
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2afVznSlh8JnPbR0CejllH"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/3Iwb4mAyyCnL0GN0yTIRdG"
+      },
+      "href": "https://api.spotify.com/v1/playlists/3Iwb4mAyyCnL0GN0yTIRdG",
+      "id": "3Iwb4mAyyCnL0GN0yTIRdG",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb4614d364717ab7a6f864c5b1",
+          "width": null
+        }
+      ],
+      "name": "jap",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTE0LGNiYzA3NzVmODY1MDI4ZTlmZGQ5MzI5ZTM3YWZiYTk0OWRlYjg0YTY=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/3Iwb4mAyyCnL0GN0yTIRdG/tracks",
+        "total": 100
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:3Iwb4mAyyCnL0GN0yTIRdG"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7HGACWqAKMcvVG96M7oqBH"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7HGACWqAKMcvVG96M7oqBH",
+      "id": "7HGACWqAKMcvVG96M7oqBH",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2732887f8c05b5a9f1cb105be29ab67616d0000b273c0ae820e3b64854de4642101ab67616d0000b273c56dcd1015c1ffb8c56d2988ab67616d0000b273f5991f6f1f0de2277bb8d948",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2732887f8c05b5a9f1cb105be29ab67616d0000b273c0ae820e3b64854de4642101ab67616d0000b273c56dcd1015c1ffb8c56d2988ab67616d0000b273f5991f6f1f0de2277bb8d948",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2732887f8c05b5a9f1cb105be29ab67616d0000b273c0ae820e3b64854de4642101ab67616d0000b273c56dcd1015c1ffb8c56d2988ab67616d0000b273f5991f6f1f0de2277bb8d948",
+          "width": 60
+        }
+      ],
+      "name": "hyperloop 1",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzIsYjdmZmQ1YjkyZDZhNTc2ZDRlYjYzYzk3MjE0MDU0ZThkNDIxYTY4Yw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7HGACWqAKMcvVG96M7oqBH/tracks",
+        "total": 18
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7HGACWqAKMcvVG96M7oqBH"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/0kELmuuKUpq5m2s7PzoT7a"
+      },
+      "href": "https://api.spotify.com/v1/playlists/0kELmuuKUpq5m2s7PzoT7a",
+      "id": "0kELmuuKUpq5m2s7PzoT7a",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273280689ecc5e4b2038bb5e4bdab67616d0000b273a52fb68f00620e45ed7467c5ab67616d0000b273da9e59639a9759d8952890c6ab67616d0000b273e84e76076abd28ad55ae7f2b",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273280689ecc5e4b2038bb5e4bdab67616d0000b273a52fb68f00620e45ed7467c5ab67616d0000b273da9e59639a9759d8952890c6ab67616d0000b273e84e76076abd28ad55ae7f2b",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273280689ecc5e4b2038bb5e4bdab67616d0000b273a52fb68f00620e45ed7467c5ab67616d0000b273da9e59639a9759d8952890c6ab67616d0000b273e84e76076abd28ad55ae7f2b",
+          "width": 60
+        }
+      ],
+      "name": "hyperloop 2",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTM3LGRhNDRlMGY5OWU3NzNlNTViZjFiYjBkMjgxYmRhNjMwOGU3OTNhMGU=",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/0kELmuuKUpq5m2s7PzoT7a/tracks",
+        "total": 135
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:0kELmuuKUpq5m2s7PzoT7a"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/23ugssiF2TgiNDVhPfClDh"
+      },
+      "href": "https://api.spotify.com/v1/playlists/23ugssiF2TgiNDVhPfClDh",
+      "id": "23ugssiF2TgiNDVhPfClDh",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273064492a2b0160db34c4eb547ab67616d0000b27316e310acbbf53780682ea3fcab67616d0000b273383f0872c41a969f7de782aeab67616d0000b27356fa03516bddab18e642e55f",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273064492a2b0160db34c4eb547ab67616d0000b27316e310acbbf53780682ea3fcab67616d0000b273383f0872c41a969f7de782aeab67616d0000b27356fa03516bddab18e642e55f",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273064492a2b0160db34c4eb547ab67616d0000b27316e310acbbf53780682ea3fcab67616d0000b273383f0872c41a969f7de782aeab67616d0000b27356fa03516bddab18e642e55f",
+          "width": 60
+        }
+      ],
+      "name": "s1",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjEsOGI5NDY0NTYzMGJjZjk4N2U4ODA2NjRjYzQ0OTVkMzdlZWMyZWMzMA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/23ugssiF2TgiNDVhPfClDh/tracks",
+        "total": 16
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:23ugssiF2TgiNDVhPfClDh"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/4R06zYA6tzBlq9tvw2BZUX"
+      },
+      "href": "https://api.spotify.com/v1/playlists/4R06zYA6tzBlq9tvw2BZUX",
+      "id": "4R06zYA6tzBlq9tvw2BZUX",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b27305b2c332a92d0b6a28ddd465ab67616d0000b27372ecf571f09de73c43dfd64eab67616d0000b273990c4361c896779f9297245dab67616d0000b273ab5074e1c9a0e594369375f5",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b27305b2c332a92d0b6a28ddd465ab67616d0000b27372ecf571f09de73c43dfd64eab67616d0000b273990c4361c896779f9297245dab67616d0000b273ab5074e1c9a0e594369375f5",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b27305b2c332a92d0b6a28ddd465ab67616d0000b27372ecf571f09de73c43dfd64eab67616d0000b273990c4361c896779f9297245dab67616d0000b273ab5074e1c9a0e594369375f5",
+          "width": 60
+        }
+      ],
+      "name": "s2",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTYsZjRkZjM5MmE5YjhkMzhiNTA3Y2U2ODFjNWY3ODlhYzY5YWI5M2VlMw==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/4R06zYA6tzBlq9tvw2BZUX/tracks",
+        "total": 14
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:4R06zYA6tzBlq9tvw2BZUX"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/6IEOX1b58VPWct7zDJbMNf"
+      },
+      "href": "https://api.spotify.com/v1/playlists/6IEOX1b58VPWct7zDJbMNf",
+      "id": "6IEOX1b58VPWct7zDJbMNf",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273303f3cbf4255aa446b6fcda4ab67616d0000b273a628aafe33421f50c08ed3c2ab67616d0000b273edf0141ab0082796458b2e4bab67616d0000b273f32af31fa8b8e5af33860ee7",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273303f3cbf4255aa446b6fcda4ab67616d0000b273a628aafe33421f50c08ed3c2ab67616d0000b273edf0141ab0082796458b2e4bab67616d0000b273f32af31fa8b8e5af33860ee7",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273303f3cbf4255aa446b6fcda4ab67616d0000b273a628aafe33421f50c08ed3c2ab67616d0000b273edf0141ab0082796458b2e4bab67616d0000b273f32af31fa8b8e5af33860ee7",
+          "width": 60
+        }
+      ],
+      "name": "s3",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NDYsMDE1Y2VkNjEwNmE4ZjRiNDY2NWU4ZjM2MWZmZWI5OTk3YWRmYWE4OA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/6IEOX1b58VPWct7zDJbMNf/tracks",
+        "total": 43
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:6IEOX1b58VPWct7zDJbMNf"
+    },
+    {
+      "collaborative": false,
+      "description": "ur &quot;slide&quot; made my playlist yay gj",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1EYbNWL5a3UbYtyy89dExt"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1EYbNWL5a3UbYtyy89dExt",
+      "id": "1EYbNWL5a3UbYtyy89dExt",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebbe2b4fe7b0561a6c1b4b97418",
+          "width": null
+        }
+      ],
+      "name": "s4",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NjAsMTljOGE2Njk1NjA1NWY1ODllMjQyNzRkY2NkOGI5NzkzOTdkNGNkNg==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1EYbNWL5a3UbYtyy89dExt/tracks",
+        "total": 53
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1EYbNWL5a3UbYtyy89dExt"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/45B8c4ZVQ6dwd9VDWJrn1k"
+      },
+      "href": "https://api.spotify.com/v1/playlists/45B8c4ZVQ6dwd9VDWJrn1k",
+      "id": "45B8c4ZVQ6dwd9VDWJrn1k",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2732ecbbd04bb94c7cfff58819dab67616d0000b27335f61b1795c0da82044cc7d7ab67616d0000b2734a42166d927b3acce345c5c0ab67616d0000b2735a608d7d78c49723499b715d",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2732ecbbd04bb94c7cfff58819dab67616d0000b27335f61b1795c0da82044cc7d7ab67616d0000b2734a42166d927b3acce345c5c0ab67616d0000b2735a608d7d78c49723499b715d",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2732ecbbd04bb94c7cfff58819dab67616d0000b27335f61b1795c0da82044cc7d7ab67616d0000b2734a42166d927b3acce345c5c0ab67616d0000b2735a608d7d78c49723499b715d",
+          "width": 60
+        }
+      ],
+      "name": "freshman yr",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTMsMjAxNzA2MTVjODY3OTkwM2UxMzc4MjUwNjQ0ZDdkYWM3YWIzZGYxMQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/45B8c4ZVQ6dwd9VDWJrn1k/tracks",
+        "total": 10
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:45B8c4ZVQ6dwd9VDWJrn1k"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2MkBBqITA333BDXfqGVOck"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2MkBBqITA333BDXfqGVOck",
+      "id": "2MkBBqITA333BDXfqGVOck",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b27301beda958395a1a0bb9e00daab67616d0000b27343cb0583c3fbbb379d6afab5ab67616d0000b273625ccd07dc993c099110bdd2ab67616d0000b273bcdeec925f7fea983b544ea9",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b27301beda958395a1a0bb9e00daab67616d0000b27343cb0583c3fbbb379d6afab5ab67616d0000b273625ccd07dc993c099110bdd2ab67616d0000b273bcdeec925f7fea983b544ea9",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b27301beda958395a1a0bb9e00daab67616d0000b27343cb0583c3fbbb379d6afab5ab67616d0000b273625ccd07dc993c099110bdd2ab67616d0000b273bcdeec925f7fea983b544ea9",
+          "width": 60
+        }
+      ],
+      "name": "brockhampton",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MjksMWM4MmJhYWMyYjY0MjEyYzE0OWQ1OGNjYmU5NzZlMTNlMWNjM2ZhOQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2MkBBqITA333BDXfqGVOck/tracks",
+        "total": 27
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2MkBBqITA333BDXfqGVOck"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7w1GSOH8Dp40KJM68uWx2p"
+      },
+      "href": "https://api.spotify.com/v1/playlists/7w1GSOH8Dp40KJM68uWx2p",
+      "id": "7w1GSOH8Dp40KJM68uWx2p",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b273113ef593aa679b556f0659b2ab67616d0000b2733d082d3235add035f9e85859ab67616d0000b27376767c56ea68780fff2efb31ab67616d0000b273e38b358e7430080fd9d814ae",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b273113ef593aa679b556f0659b2ab67616d0000b2733d082d3235add035f9e85859ab67616d0000b27376767c56ea68780fff2efb31ab67616d0000b273e38b358e7430080fd9d814ae",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b273113ef593aa679b556f0659b2ab67616d0000b2733d082d3235add035f9e85859ab67616d0000b27376767c56ea68780fff2efb31ab67616d0000b273e38b358e7430080fd9d814ae",
+          "width": 60
+        }
+      ],
+      "name": "jap summer 1",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzIsZTBkNWRlMzg3NDBmMDM3YThkZTE2ODUwNTJlZWM3ODE3NzJjYTUxMQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7w1GSOH8Dp40KJM68uWx2p/tracks",
+        "total": 19
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:7w1GSOH8Dp40KJM68uWx2p"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/65UuvsyRN1rZKYBVoUDYZy"
+      },
+      "href": "https://api.spotify.com/v1/playlists/65UuvsyRN1rZKYBVoUDYZy",
+      "id": "65UuvsyRN1rZKYBVoUDYZy",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2733a376bd9b9b1f4b2686807dbab67616d0000b27343cb0583c3fbbb379d6afab5ab67616d0000b273706a733634175d413dedfe54ab67616d0000b2737607aa9ae7904e1b12907c93",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2733a376bd9b9b1f4b2686807dbab67616d0000b27343cb0583c3fbbb379d6afab5ab67616d0000b273706a733634175d413dedfe54ab67616d0000b2737607aa9ae7904e1b12907c93",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2733a376bd9b9b1f4b2686807dbab67616d0000b27343cb0583c3fbbb379d6afab5ab67616d0000b273706a733634175d413dedfe54ab67616d0000b2737607aa9ae7904e1b12907c93",
+          "width": 60
+        }
+      ],
+      "name": "jap summer 2",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NTEsMGVjOWZhMjgzZjc3ZTc0NzM2MTg0ZjM0NjlmMmMyY2I1ODZhYjViNA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/65UuvsyRN1rZKYBVoUDYZy/tracks",
+        "total": 45
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:65UuvsyRN1rZKYBVoUDYZy"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/25ZXyVvGoygvXC5025yGdK"
+      },
+      "href": "https://api.spotify.com/v1/playlists/25ZXyVvGoygvXC5025yGdK",
+      "id": "25ZXyVvGoygvXC5025yGdK",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b2735ddbd61ea4a6dab213cc97afab67616d0000b27382c6a08699bfd0e4bbe95001ab67616d0000b273d65c698f7b03031930a2a570ab67616d0000b273ec8be21d32e663885fbb244e",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b2735ddbd61ea4a6dab213cc97afab67616d0000b27382c6a08699bfd0e4bbe95001ab67616d0000b273d65c698f7b03031930a2a570ab67616d0000b273ec8be21d32e663885fbb244e",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b2735ddbd61ea4a6dab213cc97afab67616d0000b27382c6a08699bfd0e4bbe95001ab67616d0000b273d65c698f7b03031930a2a570ab67616d0000b273ec8be21d32e663885fbb244e",
+          "width": 60
+        }
+      ],
+      "name": "alt",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MTUsNjA2NDlhNTBmZmQ2ODgxNGIyZDJmOTAzMzc2MzA2ZDliMGQxM2YwMQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/25ZXyVvGoygvXC5025yGdK/tracks",
+        "total": 10
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:25ZXyVvGoygvXC5025yGdK"
+    },
+    {
+      "collaborative": false,
+      "description": "there&#x27;s a new moomin movie coming out btw :-)",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/1e2b6DnAl1ONKqhV6cgSrt"
+      },
+      "href": "https://api.spotify.com/v1/playlists/1e2b6DnAl1ONKqhV6cgSrt",
+      "id": "1e2b6DnAl1ONKqhV6cgSrt",
+      "images": [
+        {
+          "height": null,
+          "url": "https://i.scdn.co/image/ab67706c0000bebb202485235d848ebfee32bdf9",
+          "width": null
+        }
+      ],
+      "name": "tolerable songs",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "NzIsMjVhYWUwN2YwMjE3NTVkYTBmZjMxZmYzMjRlY2VjZjQ2NjNmMWEwZQ==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/1e2b6DnAl1ONKqhV6cgSrt/tracks",
+        "total": 62
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:1e2b6DnAl1ONKqhV6cgSrt"
+    },
+    {
+      "collaborative": false,
+      "description": "",
+      "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/2DiNKL9HUeV5r7omFt4FFc"
+      },
+      "href": "https://api.spotify.com/v1/playlists/2DiNKL9HUeV5r7omFt4FFc",
+      "id": "2DiNKL9HUeV5r7omFt4FFc",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://mosaic.scdn.co/640/ab67616d0000b27316a312d3a18f48077f778a4cab67616d0000b2737a199b96bb2b8d72dcf017afab67616d0000b2739d2efe43d5b7ebc7cb60ca81ab67616d0000b273d828b182ee9b7193a0f8b5d6",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://mosaic.scdn.co/300/ab67616d0000b27316a312d3a18f48077f778a4cab67616d0000b2737a199b96bb2b8d72dcf017afab67616d0000b2739d2efe43d5b7ebc7cb60ca81ab67616d0000b273d828b182ee9b7193a0f8b5d6",
+          "width": 300
+        },
+        {
+          "height": 60,
+          "url": "https://mosaic.scdn.co/60/ab67616d0000b27316a312d3a18f48077f778a4cab67616d0000b2737a199b96bb2b8d72dcf017afab67616d0000b2739d2efe43d5b7ebc7cb60ca81ab67616d0000b273d828b182ee9b7193a0f8b5d6",
+          "width": 60
+        }
+      ],
+      "name": "tunes with ian",
+      "owner": {
+        "display_name": "cliffordhart",
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/cliffordhart"
+        },
+        "href": "https://api.spotify.com/v1/users/cliffordhart",
+        "id": "cliffordhart",
+        "type": "user",
+        "uri": "spotify:user:cliffordhart"
+      },
+      "primary_color": null,
+      "public": true,
+      "snapshot_id": "MzAsMDIwN2Q2ZjViYzM3MjYzODEzZmUwMjdjODQ5M2NjM2QzNDliMmY3ZA==",
+      "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/2DiNKL9HUeV5r7omFt4FFc/tracks",
+        "total": 29
+      },
+      "type": "playlist",
+      "uri": "spotify:playlist:2DiNKL9HUeV5r7omFt4FFc"
+    }
+  ],
+  "limit": 20,
+  "next": null,
+  "offset": 0,
+  "previous": null,
+  "total": 19
+}

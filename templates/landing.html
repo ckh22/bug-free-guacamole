@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .body {
+                padding: 0;
+                margin: 0;
+                background: #e2e2e2;
+            }
+
+            .cards {
+                display: -ms-grid;
+                display: grid;
+                -ms-grid-columns: auto auto auto;
+                grid-template-columns: auto auto auto;
+                grid-gap: 10px;
+                padding: 10px;
+                max-width: 90vh;
+                margin: 0 auto;
+            }
+
+            .card {
+                width: 300px;
+                height: 300px;
+                -webkit-box-shadow: 5px 5px 10px 3px #d1d1d1;
+                box-shadow: 5px 5px 10px 3px #d1d1d1;
+                margin: 0 auto;
+                background-color: white;
+                /*# sourceMappingURL=style.css.map */
+            </style>
+        </head>
+        <body>
+            <div>
+                <nav>
+                    <a href="#" class="logo">Kei Hartley</a>
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="cards">
+                    {% for playlist in playlists %}
+                        <div class="card">
+                            <span>{{ playlist.name }}</span>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </body>
+    </head>
 </html>
