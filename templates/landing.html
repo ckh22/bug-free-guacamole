@@ -5,51 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <style>
-            .body {
+            body {
                 padding: 0;
                 margin: 0;
                 background: #e2e2e2;
             }
 
+            ul {
+                list-style: none;
+            }
+
             .cards {
                 display: -ms-grid;
                 display: grid;
-                -ms-grid-columns: auto auto auto;
-                grid-template-columns: auto auto auto;
-                grid-gap: 10px;
-                padding: 10px;
+                -ms-grid-columns: auto;
+                grid-template-columns: auto;
+                grid-gap: 50px;
+                padding: 50px;
                 max-width: 90vh;
                 margin: 0 auto;
             }
 
             .card {
-                width: 300px;
+                width: 700px;
                 height: 300px;
                 -webkit-box-shadow: 5px 5px 10px 3px #d1d1d1;
                 box-shadow: 5px 5px 10px 3px #d1d1d1;
                 margin: 0 auto;
                 background-color: white;
-                /*# sourceMappingURL=style.css.map */
-            </style>
-        </head>
-        <body>
-            <div>
-                <nav>
-                    <a href="#" class="logo">Kei Hartley</a>
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="cards">
-                    {% for playlist in playlists %}
-                        <div class="card">
-                            <span>{{ playlist.name }}</span>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </body>
+            }
+
+            .card img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .inline {
+                display: inline-block;
+                margin: 10px;
+            }
+        </style>
     </head>
-</html>
+    <body>
+        <div>
+            <ul>
+                <li class="inline">
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li class="inline">
+                    <a href="#">About</a>
+                </li>
+                <li class="inline">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="cards">
+                {% for playlist in playlists %}
+                <div class="card">
+                    <img src="{{ playlist.image }}" alt="playlist image"></img>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </body>
+</html></head></html></div></body></head></html>

@@ -24,6 +24,14 @@ headers = {'Authorization': 'Bearer 24owyf8KJ8CV54BW4QJJMjtEG9-Mz7KKhdxr_0_OGybj
 song_title = 'Lake Song'
 artist_name = 'The Decemberists'
 
+class Song():
+    def __init__(self, json, lyrics):
+        self.json = json
+        self.lyrics = lyrics
+
+    def __str__(self):
+        return self.lyrics
+
 def lyrics_from_song_api_path(song_api_path):
     song_url = base_url + song_api_path
     response = requests.get(song_url, headers = headers)
@@ -36,6 +44,8 @@ def lyrics_from_song_api_path(song_api_path):
     #remove script tags in middle of lyrics
     [h.extract() for h in html('script')]
     lyrics = html.find('div', class_ = 'lyrics').get_text()
+    print(json)
+    return Song(json, lyrics)
 
 if __name__ == '__main__':
     search_url = base_url + '/search'
@@ -44,12 +54,12 @@ if __name__ == '__main__':
     json = response.json()
     song_info = None
     for hit in json['response']['hits']:
-        if hit['results']['primary_artist']['name'] == artist_name:
-            song_info = hit
+        if hit['result']['primary_artist']['name'] == artist_name:
+             song_info = hit
         break
-    if song_info:
+    if song_info != None:
         song_api_path = song_info['result']['api_path']
-        print (lyrics_from_song_api_path(song_api_path))
+        print(lyrics_from_song_api_path(song_api_path))
 
 
 

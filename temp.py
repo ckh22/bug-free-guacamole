@@ -84,6 +84,7 @@ def callback():
         pl_URL = 'https://api.spotify.com/v1/playlists/{playlist_id}/tracks'.format(playlist_id=playlist_id)
         tracks_response =requests.get(pl_URL, headers=authorization_header)
         tracks_data = json.loads(tracks_response.text)
+        print(playlist)
         playlists.append(Playlist(playlist=playlist, authorization=authorization_header))
     return render_template("landing.html", playlists=playlists)
 
