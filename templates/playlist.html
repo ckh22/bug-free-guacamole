@@ -4,26 +4,84 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+            body {
+                text-decoration: none;
+            }
+            .top {
+                display: flex;
+                justify-content: center;
+            }
+
+            .top img {
+                margin-right: 2em;
+                width: 40vh;
+                height: 40vh;
+            }
+
+            .top div {
+                width: 30vh;
+            }
+
+            .track {
+                width: 300px;
+                height: 300px;
+                background: white;
+                margin: 15px;
+                border-radius: 50px 50px 50px 50px;
+                box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.75);
+                position: relative;
+            }
+
+            .tracks {
+                padding-top: 15px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .track h1 {
+                position: absolute;
+                font-size: 22px;
+                top: 5%;
+                left: 10%;
+                color: black;
+            }
+
+            .track .artists {
+                position: absolute;
+                font-size: 18px;
+                top: 35%;
+                left: 10%;
+                white-space: nowrap;
+                color: black;
+            }
+        </style>
     </head>
     <body>
         <div>
-            <div>
-                <h1>{{ playlist.name }}</h1>
+            <div class="top">
                 <img src="{{ playlist.image }}" alt="">
-            </div>
-            {% for track in playlist.tracks.values() %}
-                <div class="track">
-                    {% for artist in track.artists %}
-                        <a href="{{ url_for('track', playlist_id=playlist.id, track_id = track.id)}}">
-                            {{ track.name }}
-                            -
-                            {{ artist }}
-                        </a>
-
-                    {% endfor %}
-                    <br>
+                <div>
+                    <h1>{{ playlist.name }}</h1>
+                    <p>{{ playlist.name }}</p>
                 </div>
-            {% endfor %}
+            </div>
+            <div class="tracks">
+                {% for track in playlist.tracks.values() %}
+                    <a href="{{ url_for('track', playlist_id=playlist.id, track_id = track.id) }}"> 
+                        <div class="track" style="background-image: url({{track.image}}); background-size: 300px 300px; background-repeat: no-repeat; background-color: rgba(255,255,255,0.6); background-blend-mode: lighten;">
+                            <h1>{{ track.name }}</h1>
+                            <div class="artists">
+                                {% for artist in track.artists %}
+                                    {{ artist }}
+                                {% endfor %}
+                            </div>
+                            <br>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
         </div>
     </body>
 </html>

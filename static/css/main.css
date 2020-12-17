@@ -80,4 +80,8 @@ ul li a {
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
 }
+
+.info .top-portion a {
+  padding: 15px;
+}
 /*# sourceMappingURL=main.css.map */
