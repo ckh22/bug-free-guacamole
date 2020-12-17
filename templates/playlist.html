@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <h1>{{ playlist.name }}</h1>
+                <img src="{{ playlist.image }}" alt="">
+            </div>
+            {% for track in playlist.tracks %}
+                <div class="track">
+                    {% for artist in track.artists %}
+                        {{ track.name }}
+                        -
+                        {{ artist }}
+                    {% endfor %}
+                    <br>
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>

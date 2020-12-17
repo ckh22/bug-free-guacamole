@@ -1,0 +1,83 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #e2e2e2;
+}
+
+.content {
+  width: 100%;
+}
+
+ul {
+  height: 5vh;
+  padding: 0;
+  list-style: none;
+  background: white;
+  position: relative;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  margin: 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  grid-gap: 50px;
+  padding: 50px;
+  max-width: 90vh;
+  margin: 0 auto;
+}
+
+.cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+}
+
+.cards .card img {
+  width: 30vh;
+  height: 30vh;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.info {
+  width: 100%;
+}
+
+.info .name {
+  padding: 15px;
+}
+
+.info hr {
+  margin: 0;
+}
+
+.info .tracks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+/*# sourceMappingURL=main.css.map */

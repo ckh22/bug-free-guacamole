@@ -1,0 +1,72 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #e2e2e2;
+}
+
+.content {
+    width: 100%;
+}
+
+ul {
+    height: 5vh;
+    padding: 0;
+    list-style: none;
+    background: white;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+        margin: 15px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    grid-gap: 50px;
+    padding: 50px;
+    max-width: 90vh;
+    margin: 0 auto;
+
+    .card {
+        display: flex;
+        background: white;
+
+        img {
+            width: 30vh;
+            height: 30vh;
+        }
+    }
+}
+
+.inline {
+    display: inline-block;
+}
+
+.info {
+    width: 100%;
+
+    .name {
+        padding: 15px;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    .tracks {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}

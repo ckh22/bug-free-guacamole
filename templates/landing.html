@@ -4,78 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <style>
-            body {
-                padding: 0;
-                margin: 0;
-                background: #e2e2e2;
-            }
-            .content {
-                width: 100%;
-            }
-            ul {
-                height: 5vh;
-                padding: 0;
-                list-style: none;
-                background: white;
-                position: relative;
-                margin: 0;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-            }
-
-            ul li {
-                margin: 15px;
-            }
-
-            .cards {
-                display: -ms-grid;
-                display: grid;
-                -ms-grid-columns: auto;
-                grid-template-columns: auto;
-                grid-gap: 50px;
-                padding: 50px;
-                max-width: 90vh;
-                margin: 0 auto;
-            }
-
-            ul li a {
-                text-decoration: none;
-                color: black;
-            }
-
-            .inline {
-                display: inline-block;
-            }
-
-            .card {
-                display: flex;
-                background: white;
-            }
-
-            .card img {
-                width: 30vh;
-                height: 30vh;
-            }
-
-            .name {
-                padding: 15px;
-            }
-
-            .info {
-                width: 100%;
-            }
-
-            hr {
-                margin: 0;
-            }
-
-            .tracks {
-                display: grid;
-                grid-template-columns: auto auto auto;
-            }
-        </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     </head>
     <body>
         <div class="content">
@@ -92,19 +21,21 @@
             </ul>
             <div class="cards">
                 {% for playlist in playlists %}
-                <div class="card">
-                    <img src="{{ playlist.image }}" alt="playlist image"></img>
-                    <div class="info">
-                        <div class="name">Name: {{ playlist.name }}</div>
-                        <hr>
-                        <div class="tracks">
-                            {% for track in playlist.tracks %}
-                                <div class="track">{{track.name}}</div>
-                            {% endfor %}
+                    <div class="card">
+                        <img src="{{ playlist.image }}" alt="playlist image"></img>
+                        <a href="{{ url_for('playlist', playlist_id=playlist.id) }}">Learn More</a>
+                        <div class="info">
+                            <div class="name">Name:
+                                {{ playlist.name }}</div>
+                            <hr>
+                            <div class="tracks">
+                                {% for track in playlist.tracks %}
+                                    <div class="track">{{ track.name }}</div>
+                                {% endfor %}
+                            </div>
                         </div>
                     </div>
-                </div>
-            {% endfor %}
-        </div>
-    </body>
+                {% endfor %}
+            </div>
+        </body>
 </html></div></body></html></head></html></div></body></head></html>
