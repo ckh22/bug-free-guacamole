@@ -1,12 +1,8 @@
 from flask.helpers import url_for
-from requests.sessions import session
-from finalproject import Song
 import json
-from flask import Flask, request, redirect, g, render_template, session
+from flask import Flask, request, redirect, render_template
 import requests
-from urllib.parse import quote, urlencode
-
-from werkzeug.datastructures import Headers
+from urllib.parse import quote
 
 def pretty(obj):
     return json.dumps(obj, sort_keys=True, indent=2)
