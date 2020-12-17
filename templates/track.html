@@ -25,10 +25,6 @@
                 align-items: center;
             }
 
-            ul li {
-                margin: 15px;
-            }
-
             .cards {
                 display: -ms-grid;
                 display: grid;
@@ -40,71 +36,53 @@
                 margin: 0 auto;
             }
 
+            .card {
+                width: 700px;
+                height: 300px;
+                -webkit-box-shadow: 5px 5px 10px 3px #d1d1d1;
+                box-shadow: 5px 5px 10px 3px #d1d1d1;
+                margin: 0 auto;
+                background-color: white;
+            }
+
+            .card img {
+                width: 300px;
+                height: 300px;
+            }
+
             ul li a {
                 text-decoration: none;
                 color: black;
             }
 
             .inline {
-                display: inline-block;
-            }
-
-            .card {
-                display: flex;
-                background: white;
-            }
-
-            .card img {
-                width: 30vh;
-                height: 30vh;
-            }
-
-            .name {
-                padding: 15px;
-            }
-
-            .info {
-                width: 100%;
-            }
-
-            hr {
-                margin: 0;
-            }
-
-            .tracks {
-                display: grid;
-                grid-template-columns: auto auto auto;
+                margin: 15px;
             }
         </style>
     </head>
     <body>
         <div class="content">
             <ul>
-                <li>
+                <li class="inline">
                     <a href="#" class="active">Home</a>
                 </li>
-                <li>
+                <li class="inline">
                     <a href="#">About</a>
                 </li>
-                <li>
+                <li class="inline">
                     <a href="#">Contact</a>
                 </li>
             </ul>
             <div class="cards">
-                {% for playlist in playlists %}
+                {% for track in tracks %}
                 <div class="card">
-                    <img src="{{ playlist.image }}" alt="playlist image"></img>
+                        <img src="{{ playlist.image }}" alt="playlist image"></img>
                     <div class="info">
-                        <div class="name">Name: {{ playlist.name }}</div>
-                        <hr>
-                        <div class="tracks">
-                            {% for track in playlist.tracks %}
-                                <div class="track">{{track.name}}</div>
-                            {% endfor %}
-                        </div>
+                        <div>{{ playlist.name }}</div>
+                        <a href=""><img src="https://image.freepik.com/free-icon/arrow-circle_318-1790.jpg" alt="icon"></a>
                     </div>
                 </div>
-            {% endfor %}
+                {% endfor %}
         </div>
     </body>
 </html></div></body></html></head></html></div></body></head></html>

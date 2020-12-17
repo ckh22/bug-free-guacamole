@@ -35,6 +35,15 @@ auth_query_parameters = {
     "client_id": CLIENT_ID
 }
 
+class Track():
+    def __init__(self, track):
+        self.name = track['track']['name']
+        self.track = track
+    
+    def __str__(self):
+        return self.name
+
+
 class Playlist():
     def __init__(self, playlist, authorization):
         self.playlist = playlist
@@ -42,7 +51,11 @@ class Playlist():
         self.id = playlist['id']
         self.image = playlist['images'][0]['url']
         self.owner = playlist['owner']['display_name']
-        self.tracks = json.loads(requests.get(playlist['tracks']['href'], headers=authorization).text)
+        tracks = json.loads(requests.get(playlist['tracks']['href'], headers=authorization).text)
+        trackList = []
+        for track in tracks['items']:
+            trackList.append(Track(track))
+        self.tracks = trackList
 
     def __str__(self):
         return json.dumps(self.tracks, indent=4)
@@ -84,7 +97,6 @@ def callback():
         pl_URL = 'https://api.spotify.com/v1/playlists/{playlist_id}/tracks'.format(playlist_id=playlist_id)
         tracks_response =requests.get(pl_URL, headers=authorization_header)
         tracks_data = json.loads(tracks_response.text)
-        print(playlist)
         playlists.append(Playlist(playlist=playlist, authorization=authorization_header))
     return render_template("landing.html", playlists=playlists)
 
