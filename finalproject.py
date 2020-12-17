@@ -1,7 +1,8 @@
-from flask import Flask, render_template,request
+from flask import Flask,render_template,request
 from bs4 import BeautifulSoup
 import json, requests
 # urllib.request, urllib.error, urllib.parse,
+
 
 # credits to https://bigishdata.com/2016/09/27/getting-song-lyrics-from-geniuss-api-scraping/
 app = Flask(__name__)
@@ -28,6 +29,15 @@ class Song():
     def __init__(self, json, lyrics):
         self.json = json
         self.lyrics = lyrics
+        self.url = ['response']['song']['album']['artist']['url']
+        self.bandname = ['response']['song']['album']['artist']['name']
+        self.coverart = ['response']['song']['album']['coverart']
+        self.fulltitle = ['response']['song']['full_title']
+        self.songname = ['response']['song']['name']
+        self.songurl = ['response']['song']['url']
+        self.annotationcount = ['annotation_count']
+        self.desciption = ['response']['description']['dom']['children'][2]
+
 
     def __str__(self):
         return self.lyrics
@@ -35,8 +45,8 @@ class Song():
 def lyrics_from_song_api_path(song_api_path):
     song_url = base_url + song_api_path
     response = requests.get(song_url, headers = headers)
-    json = response.json()
-    path = json['response']['song']['path']
+    jsondata = response.json()
+    path = jsondata['response']['song']['path']
     #html scraping
     page_url = 'http://genius.com' + path
     page = requests.get(page_url)
@@ -44,26 +54,21 @@ def lyrics_from_song_api_path(song_api_path):
     #remove script tags in middle of lyrics
     [h.extract() for h in html('script')]
     lyrics = html.find('div', class_ = 'lyrics').get_text()
-    print(json)
-    return Song(json, lyrics)
+    print(pretty(jsondata))
+    # return Song(jsondata, lyrics)
+    # print(pretty(response))
 
 if __name__ == '__main__':
     search_url = base_url + '/search'
     data = {'q': song_title + ' ' + artist_name}
     response = requests.get(search_url, data=data, headers=headers)
-    json = response.json()
+    jsondata = response.json()
     song_info = None
-    for hit in json['response']['hits']:
+    for hit in jsondata['response']['hits']:
         if hit['result']['primary_artist']['name'] == artist_name:
              song_info = hit
         break
     if song_info != None:
         song_api_path = song_info['result']['api_path']
         print(lyrics_from_song_api_path(song_api_path))
-
-
-
-
-
-
 
