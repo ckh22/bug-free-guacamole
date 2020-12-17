@@ -11,12 +11,15 @@
                 <h1>{{ playlist.name }}</h1>
                 <img src="{{ playlist.image }}" alt="">
             </div>
-            {% for track in playlist.tracks %}
+            {% for track in playlist.tracks.values() %}
                 <div class="track">
                     {% for artist in track.artists %}
-                        {{ track.name }}
-                        -
-                        {{ artist }}
+                        <a href="{{ url_for('track', playlist_id=playlist.id, track_id = track.id)}}">
+                            {{ track.name }}
+                            -
+                            {{ artist }}
+                        </a>
+
                     {% endfor %}
                     <br>
                 </div>

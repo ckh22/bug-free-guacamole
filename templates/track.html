@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        {song.name}
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            {{ track.name }}
+            <br>
+            <img src="{{track.image}}" alt="">
+            <br>
+            {{ track.id }}
+            <br>
+            {% for artist in track.artists %}
+                {{ artist }}
+                <br>
+            {% endfor %}
+        </div>
+    </body>
 </html>

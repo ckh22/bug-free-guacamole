@@ -1,3 +1,4 @@
+from flask.helpers import url_for
 from requests.sessions import session
 from finalproject import Song
 import json
@@ -50,7 +51,8 @@ class Track():
         for artist in track['track']['album']['artists']:
             artistList.append(artist['name'])
         self.artists = artistList
-    
+        self.id = track['track']['id']
+        self.image = track['track']['album']['images'][0]['url']
     def __str__(self):
         return self.track
 
@@ -64,9 +66,10 @@ class Playlist():
         self.owner = playlist['owner']['display_name']
         tracks = requests.get(playlist['tracks']['href'], headers=authorization)
         track_data = json.loads(tracks.text)
-        trackList = []
+        trackList = {}
         for track in track_data['items']:
-            trackList.append(Track(track))
+            single = Track(track)
+            trackList[single.id] = single
         self.tracks = trackList
 
     def __str__(self):
@@ -106,13 +109,20 @@ def callback():
     for playlist in playlist_data['items']:
         playlist_id = playlist['id']
         playlists[playlist_id] = Playlist(playlist=playlist, authorization=authorization_header)
-    return render_template("landing.html", playlists=playlists.values())
+    return redirect(url_for('user'))
+
+@app.route('/user')
+def user():
+    return render_template('landing.html', playlists=playlists.values())
 
 @app.route('/playlist/<playlist_id>')
 def playlist(playlist_id):
     if playlist_id in playlists:
-        print(pretty(playlists[playlist_id].tracks[0].track))
         return render_template("playlist.html", playlist=playlists[playlist_id])
+
+@app.route('/playlist/<playlist_id>/<track_id>')
+def track(playlist_id, track_id):
+    return render_template("track.html", track=playlists[playlist_id].tracks[track_id])
 
 if __name__ == "__main__":
     app.run(debug=True, port=PORT)

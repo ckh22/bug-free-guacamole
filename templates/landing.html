@@ -29,7 +29,7 @@
                                 {{ playlist.name }}</div>
                             <hr>
                             <div class="tracks">
-                                {% for track in playlist.tracks %}
+                                {% for track in playlist.tracks.values() %}
                                     <div class="track">{{ track.name }}</div>
                                 {% endfor %}
                             </div>
