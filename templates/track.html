@@ -11,14 +11,22 @@
                 margin: 0;
                 padding: 0;
             }
+
+
         </style>
     </head>
     <body>
         <div>
+            {% block content %}
+                {% if genius.song != None %}
+                    <div class="lyrics">
+                        {{ genius.song.lyrics }}
+                    </div>
+                {% endif %}
+            {% endblock content %}
             {{ track.name }}
-            {{genius.base_url}}
             <br>
-            <img src="{{track.image}}" alt="">
+            <img src="{{ track.image }}" alt="">
             <br>
             {{ track.id }}
             <br>

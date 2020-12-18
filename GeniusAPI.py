@@ -16,6 +16,7 @@ class GeniusAPI():
         self.headers = {'Authorization': 'Bearer 24owyf8KJ8CV54BW4QJJMjtEG9-Mz7KKhdxr_0_OGybjtm883Mz04bjWxk2zqGSH'}
         self.song_title = name
         self.artist_name = artist
+        self.song = None
         search_url = self.base_url + '/search'
         data = {'q': self.song_title + ' ' + self.artist_name}
         response = requests.get(search_url, data=data, headers=self.headers)
@@ -27,19 +28,13 @@ class GeniusAPI():
             break
         if song_info != None:
             song_api_path = song_info['result']['api_path']
-            self.song = self.lyrics_from_song_api_path(song_api_path)
-            print(self.song)
-
-    def lyrics_from_song_api_path(self, song_api_path):
-        song_url = self.base_url + song_api_path
-        response = requests.get(song_url, headers = self.headers)
-        jsondata = response.json()
-        path = jsondata['response']['song']['path']
-        #html scraping
-        page_url = 'http://genius.com' + path
-        page = requests.get(page_url)
-        html = BeautifulSoup(page.text, 'html.parser')
-        #remove script tags in middle of lyrics
-        [h.extract() for h in html('script')]
-        lyrics = html.find('div', class_ = 'lyrics').get_text()
-        return Song(jsondata, lyrics)
+            song_url = self.base_url + song_api_path
+            response = requests.get(song_url, headers = self.headers)
+            jsondata = response.json()
+            path = jsondata['response']['song']['path']
+            page_url = 'http://genius.com' + path
+            page = requests.get(page_url)
+            html = BeautifulSoup(page.text, 'html.parser')
+            [h.extract() for h in html('script')]
+            lyrics = html.find('div', class_ = 'lyrics').get_text()
+            self.song = Song(jsondata, lyrics)
