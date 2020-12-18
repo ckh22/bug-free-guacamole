@@ -104,6 +104,11 @@
                 font-size: 16px;
             }
 
+            .tracks a {
+                text-decoration: none;
+                color: black;
+            }
+
             .tracks-container {
                 height: 249px;
                 overflow: scroll;
@@ -180,7 +185,9 @@
                             <div class="tracks-container" id="style-3">
                                 <div class="tracks">
                                     {% for track in playlist.tracks.values() %}
-                                        <div class="track">{{ track.name }}</div>
+                                        <a href="{{ url_for('track', playlist_id=playlist.id, track_id = track.id) }}">
+                                            <div class="track">{{ track.name }}</div>
+                                        </a>
                                     {% endfor %}
                                 </div>
                             </div>
