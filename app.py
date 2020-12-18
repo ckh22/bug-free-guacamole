@@ -3,6 +3,7 @@ import json
 from flask import Flask, request, redirect, render_template
 import requests
 from urllib.parse import quote
+from GeniusAPI import GeniusAPI
 
 def pretty(obj):
     return json.dumps(obj, sort_keys=True, indent=2)
@@ -50,7 +51,7 @@ class Track():
         self.id = track['track']['id']
         self.image = track['track']['album']['images'][0]['url']
     def __str__(self):
-        return self.track
+        return self.lyrics
 
 
 class Playlist():
@@ -118,7 +119,11 @@ def playlist(playlist_id):
 
 @app.route('/playlist/<playlist_id>/<track_id>')
 def track(playlist_id, track_id):
-    return render_template("track.html", track=playlists[playlist_id].tracks[track_id])
+    if playlist_id in playlists:
+        if track_id in playlists[playlist_id].tracks:
+            track_name = playlists[playlist_id].tracks[track_id].name
+            track_artists = playlists[playlist_id].tracks[track_id].artists[0]
+            return render_template("track.html", track=playlists[playlist_id].tracks[track_id], genius=GeniusAPI(track_name, track_artists))
 
 if __name__ == "__main__":
     app.run(debug=True, port=PORT)
