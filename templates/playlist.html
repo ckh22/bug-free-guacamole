@@ -9,13 +9,16 @@
             body {
                 text-decoration: none;
                 font-family: 'Raleway', sans-serif;
+                margin: 0;
+                padding: 0;
+
             }
 
             ul {
                 height: 5vh;
                 padding: 0;
                 list-style: none;
-                background: white;
+                background: rgb(231, 231, 231);
                 position: relative;
                 margin: 0;
                 display: -webkit-box;
@@ -38,19 +41,24 @@
                 color: black;
             }
 
+            .content {
+                background: rgb(255, 230, 230);
+            }
             .top {
                 display: flex;
                 justify-content: center;
+                padding: 15px;
             }
 
             .top img {
-                margin-right: 2em;
                 width: 40vh;
                 height: 40vh;
+                border-radius: 10px;
             }
 
             .top div {
                 width: 30vh;
+                padding: 15px;
             }
 
             .track {
@@ -93,19 +101,12 @@
             <li>
                 <a href="{{ url_for('user') }}" class="active">Home</a>
             </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
         </ul>
-        <div>
+        <div class="content">
             <div class="top">
                 <img src="{{ playlist.image }}" alt="">
                 <div>
                     <h1>{{ playlist.name }}</h1>
-                    <p>{{ playlist.name }}</p>
                 </div>
             </div>
             <div class="tracks">

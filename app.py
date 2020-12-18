@@ -4,6 +4,7 @@ from flask import Flask, request, redirect, render_template
 import requests
 from urllib.parse import quote
 from GeniusAPI import GeniusAPI
+from Playlist import Playlist
 
 def pretty(obj):
     return json.dumps(obj, sort_keys=True, indent=2)
@@ -38,39 +39,6 @@ auth_query_parameters = {
     "scope": SCOPE,
     "client_id": CLIENT_ID
 }
-
-
-class Track():
-    def __init__(self, track):
-        self.name = track['track']['name']
-        self.track = track
-        artistList = []
-        for artist in track['track']['album']['artists']:
-            artistList.append(artist['name'])
-        self.artists = artistList
-        self.id = track['track']['id']
-        self.image = track['track']['album']['images'][0]['url']
-    def __str__(self):
-        return self.lyrics
-
-
-class Playlist():
-    def __init__(self, playlist, authorization):
-        self.playlist = playlist
-        self.name = playlist['name']
-        self.id = playlist['id']
-        self.image = playlist['images'][0]['url']
-        self.owner = playlist['owner']['display_name']
-        tracks = requests.get(playlist['tracks']['href'], headers=authorization)
-        track_data = json.loads(tracks.text)
-        trackList = {}
-        for track in track_data['items']:
-            single = Track(track)
-            trackList[single.id] = single
-        self.tracks = trackList
-
-    def __str__(self):
-        return json.dumps(self.tracks, indent=4)
 
 
 @app.route("/")
@@ -124,7 +92,10 @@ def track(playlist_id, track_id):
             track_name = playlists[playlist_id].tracks[track_id].name
             track_artists = playlists[playlist_id].tracks[track_id].artists[0]
             info = GeniusAPI(track_name, track_artists)
-            return render_template("track.html", track=playlists[playlist_id].tracks[track_id], genius=info, lyrics=info.return_song()[0])
+            lyrics = None
+            if info.song != None:
+                lyrics = info.return_song()[0]    
+            return render_template("track.html", track=playlists[playlist_id].tracks[track_id], genius=info, lyrics=lyrics)
 
 if __name__ == "__main__":
     app.run(debug=True, port=PORT)

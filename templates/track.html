@@ -42,7 +42,7 @@
             }
 
             .lyrics {
-                width: 500px;
+                width: 60vh;
                 background: white;
             }
 
@@ -53,16 +53,16 @@
             }
 
             .lyrics {
-                padding: 15px;
+                padding: 3em;
+                margin-top: 3.3em;
             }
 
-            .info img {
-                width: 40vh;
-            }
 
             .sticky {
                 position: sticky;
                 top: 10%;
+                margin: 0 auto;
+                box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.349);
             }
         </style>
     </head>
@@ -71,40 +71,36 @@
             <li>
                 <a href="{{ url_for('user') }}" class="active">Home</a>
             </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
         </ul>
         <div class="container content">
-            {% block content %}
+            <div class="lyrics container">
                 {% if lyrics != None %}
-                    <div class="lyrics container">
-                        {% for line in lyrics %}
-                            {{ line }}
-                            <br>
-                        {% endfor %}
-                    </div>
+
+                    <h1>{{ track.name }}</h1>
+                    <h4>By:{{ track.artists[0] }}</h4>
+                    {% for line in lyrics %}
+                        {{ line }}
+                        <br>
+                    {% endfor %}
+
+                {% else %}
+                    <h4>No Lyrics Found</h4>
                 {% endif %}
-            {% endblock content %}
-            <div class="info">
-                <div class="sticky card">
-                    <img src="{{ track.image }}" alt="track image" class="card-img-top"/>
-                    <div class="card-body">
-                        {% for artist in track.artists %}
-                            <p>{{ artist }}</p>
-                            <br>
-                        {% endfor %}
-                        {{ track.name }}
-                    </div>
-                    {% if genius.song != None %}
-                        <div class="description container"></div>
-                    {% endif %}
+            </div>
+        <div class="info">
+            <div class="card sticky" style="width: 40vh;">
+                <img src="{{ track.image }}" alt="track image" class="card-img-top"/>
+                <div class="card-body">
+                    Track:
+                    {{ track.name }}
                     <br>
+                    Artist(s):
+                    {% for artist in track.artists %}
+                        {{ artist }}
+                        <br>
+                    {% endfor %}
                 </div>
             </div>
-        </body>
+        </div>
     </body>
-</html></div></body></html></div></body></html>
+</html></body></html></div></body></html></div></body></html>

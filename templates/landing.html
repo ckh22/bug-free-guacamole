@@ -20,29 +20,13 @@
 
             ul {
                 height: 5vh;
-                padding: 0;
-                list-style: none;
                 background: white;
-                position: relative;
                 margin: 0;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: end;
-                -ms-flex-pack: end;
-                justify-content: flex-end;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
+                text-align: center;
             }
 
-            ul li {
-                margin: 15px;
-            }
-
-            ul li a {
-                text-decoration: none;
-                color: black;
+            ul div {
+                padding: 15px;
             }
 
             .cards {
@@ -159,15 +143,7 @@
     <body>
         <div class="content">
             <ul>
-                <li>
-                    <a href="#" class="active"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
-                <li>
-                    <a href="#"></a>
-                </li>
+                <div>WEBSITE NAME</div>
             </ul>
             <div class="cards">
                 {% for playlist in playlists %}
