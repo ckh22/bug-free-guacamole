@@ -10,7 +10,7 @@
             body {
                 padding: 0;
                 margin: 0;
-                background: #f7f7f7;
+                background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
                 font-family: 'Raleway', sans-serif;
             }
 
@@ -20,13 +20,16 @@
 
             ul {
                 height: 5vh;
-                background: white;
+                background: rgb(32, 32, 32);
                 margin: 0;
                 text-align: center;
             }
 
             ul div {
                 padding: 15px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
             }
 
             .cards {
@@ -48,7 +51,7 @@
                 background: white;
                 max-height: 30vh;
                 border-radius: 20px 20px 20px 20px;
-                box-shadow: 5px 5px 5px 0 rgba(226, 166, 167, 1);
+                box-shadow: 5px 5px 5px 0 rgb(164, 188, 207);
                 overflow: hidden;
             }
 
@@ -69,6 +72,7 @@
             .info .name {
                 padding: 20px;
                 font-size: 22px;
+                color: white;
             }
 
             .info hr {
@@ -94,9 +98,14 @@
             }
 
             .tracks-container {
-                height: 249px;
+                height: 252px;
                 overflow: scroll;
                 overflow-x: hidden;
+                background: rgba(228, 221, 220, 0.788);
+            }
+
+            .top-portion {
+                background: rgb(172, 123, 123);
             }
 
             #style-3::-webkit-scrollbar-track {
@@ -136,14 +145,20 @@
                 border-radius: 10px 10px 10px 10px;
                 border: 0.5px solid rgb(226, 167, 167);
                 box-shadow: 0 0 1px 0 rgba(226, 166, 167, 1);
+                transition: 0.3s;
             }
-            /*# sourceMappingURL=main.css.map */
+
+            .playlist-btn:hover {
+                background: rgb(28, 37, 90);
+                color: rgb(255, 255, 255);
+                border: none;
+            }
         </style>
     </head>
     <body>
         <div class="content">
             <ul>
-                <div>WEBSITE NAME</div>
+                <div>WELCOME</div>
             </ul>
             <div class="cards">
                 {% for playlist in playlists %}
@@ -154,10 +169,9 @@
                                 <div class="name">Playlist:
                                     {{ playlist.name }}</div>
                                 <a href="{{ url_for('playlist', playlist_id=playlist.id) }}">
-                                    <button class="playlist-btn">View Playlist</button>
+                                    <button class="playlist-btn fill">View Playlist</button>
                                 </a>
                             </div>
-                            <hr>
                             <div class="tracks-container" id="style-3">
                                 <div class="tracks">
                                     {% for track in playlist.tracks.values() %}

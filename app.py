@@ -6,8 +6,6 @@ from urllib.parse import quote
 from GeniusAPI import GeniusAPI
 from Playlist import Playlist
 
-def pretty(obj):
-    return json.dumps(obj, sort_keys=True, indent=2)
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
@@ -95,7 +93,7 @@ def track(playlist_id, track_id):
             lyrics = None
             if info.song != None:
                 lyrics = info.return_song()[0]    
-            return render_template("track.html", track=playlists[playlist_id].tracks[track_id], genius=info, lyrics=lyrics)
+            return render_template("track.html", track=playlists[playlist_id].tracks[track_id], genius=info, lyrics=lyrics, playlists=playlists[playlist_id])
 
 if __name__ == "__main__":
     app.run(debug=True, port=PORT)

@@ -8,5 +8,6 @@ class Track():
         self.artists = artistList
         self.id = track['track']['id']
         self.image = track['track']['album']['images'][0]['url']
+        self.datetime = track['added_at']
     def __str__(self):
         return self.lyrics
