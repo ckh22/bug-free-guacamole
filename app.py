@@ -123,7 +123,8 @@ def track(playlist_id, track_id):
         if track_id in playlists[playlist_id].tracks:
             track_name = playlists[playlist_id].tracks[track_id].name
             track_artists = playlists[playlist_id].tracks[track_id].artists[0]
-            return render_template("track.html", track=playlists[playlist_id].tracks[track_id], genius=GeniusAPI(track_name, track_artists))
+            info = GeniusAPI(track_name, track_artists)
+            return render_template("track.html", track=playlists[playlist_id].tracks[track_id], genius=info, lyrics=info.return_song()[0])
 
 if __name__ == "__main__":
     app.run(debug=True, port=PORT)

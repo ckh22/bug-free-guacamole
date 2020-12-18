@@ -10,6 +10,34 @@
                 text-decoration: none;
                 font-family: 'Raleway', sans-serif;
             }
+
+            ul {
+                height: 5vh;
+                padding: 0;
+                list-style: none;
+                background: white;
+                position: relative;
+                margin: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            ul li {
+                margin: 15px;
+            }
+
+            ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
             .top {
                 display: flex;
                 justify-content: center;
@@ -61,6 +89,17 @@
         </style>
     </head>
     <body>
+        <ul>
+            <li>
+                <a href="{{ url_for('user') }}" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+        </ul>
         <div>
             <div class="top">
                 <img src="{{ playlist.image }}" alt="">
@@ -71,8 +110,8 @@
             </div>
             <div class="tracks">
                 {% for track in playlist.tracks.values() %}
-                    <a href="{{ url_for('track', playlist_id=playlist.id, track_id = track.id) }}"> 
-                        <div class="track" style="background-image: url({{track.image}}); background-size: 300px 300px; background-repeat: no-repeat; background-color: rgba(255,255,255,0.6); background-blend-mode: lighten;">
+                    <a href="{{ url_for('track', playlist_id=playlist.id, track_id = track.id) }}">
+                        <div class="track" style="background-image: url({{ track.image }}); background-size: 300px 300px; background-repeat: no-repeat; background-color: rgba(255,255,255,0.6); background-blend-mode: lighten;">
                             <h1>{{ track.name }}</h1>
                             <div class="artists">
                                 {% for artist in track.artists %}

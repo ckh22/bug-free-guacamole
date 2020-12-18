@@ -5,38 +5,106 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <style>
             body {
                 font-family: 'Raleway', sans-serif;
                 margin: 0;
                 padding: 0;
+                background: rgb(235, 211, 211);
+            }
+
+            ul {
+                height: 5vh;
+                padding: 0;
+                list-style: none;
+                background: white;
+                position: relative;
+                margin: 0;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                justify-content: flex-end;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+            ul li {
+                margin: 15px;
+            }
+
+            ul li a {
+                text-decoration: none;
+                color: black;
             }
 
             .lyrics {
                 width: 500px;
+                background: white;
             }
 
+            .content {
+                display: grid;
+                grid-template-columns: auto auto;
+                column-gap: 20px;
+            }
+
+            .lyrics {
+                padding: 15px;
+            }
+
+            .info img {
+                width: 40vh;
+            }
+
+            .sticky {
+                position: sticky;
+                top: 10%;
+            }
         </style>
     </head>
     <body>
-        <div>
+        <ul>
+            <li>
+                <a href="{{ url_for('user') }}" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#"></a>
+            </li>
+        </ul>
+        <div class="container content">
             {% block content %}
-                {% if genius.song != None %}
-                    <div class="lyrics">
-                        {{ genius.song.lyrics }}
+                {% if lyrics != None %}
+                    <div class="lyrics container">
+                        {% for line in lyrics %}
+                            {{ line }}
+                            <br>
+                        {% endfor %}
                     </div>
                 {% endif %}
             {% endblock content %}
-            {{ track.name }}
-            <br>
-            <img src="{{ track.image }}" alt="">
-            <br>
-            {{ track.id }}
-            <br>
-            {% for artist in track.artists %}
-                {{ artist }}
-                <br>
-            {% endfor %}
-        </div>
+            <div class="info">
+                <div class="sticky card">
+                    <img src="{{ track.image }}" alt="track image" class="card-img-top"/>
+                    <div class="card-body">
+                        {% for artist in track.artists %}
+                            <p>{{ artist }}</p>
+                            <br>
+                        {% endfor %}
+                        {{ track.name }}
+                    </div>
+                    {% if genius.song != None %}
+                        <div class="description container"></div>
+                    {% endif %}
+                    <br>
+                </div>
+            </div>
+        </body>
     </body>
-</html>
+</html></div></body></html></div></body></html>

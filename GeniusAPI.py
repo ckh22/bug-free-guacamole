@@ -38,3 +38,6 @@ class GeniusAPI():
             [h.extract() for h in html('script')]
             lyrics = html.find('div', class_ = 'lyrics').get_text()
             self.song = Song(jsondata, lyrics)
+
+    def return_song(self):
+        return self.song.lyrics
